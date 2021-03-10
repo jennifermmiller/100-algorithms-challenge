@@ -5,7 +5,7 @@ export function addBorder(picture: string[]): string[] {
 
   const addHorzBorder = [horzBorder].concat(picture, horzBorder);
 
-  const addVertBorders = addHorzBorder.map(line => `*${line}*`);
+  const addVertBorders = addHorzBorder.map((line: string): string => `*${line}*`);
 
   return addVertBorders;
 }
